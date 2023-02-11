@@ -12,10 +12,18 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Login(),
+      themeMode: ThemeMode.system,
+      darkTheme: ThemeData(
+        brightness: Brightness.light,
+      ),
       theme: ThemeData(
         primarySwatch: Colors.teal,
       ),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => const Login(),
+        "/home": (context) => const Home(),
+      },
     );
   }
 }
