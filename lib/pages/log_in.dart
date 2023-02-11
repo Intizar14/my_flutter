@@ -15,7 +15,7 @@ class Login extends StatelessWidget {
               child: Image(
                 height: 200,
                 width: 250,
-                image: AssetImage("assets/login.png"),
+                image: AssetImage("assets/images/login.png"),
                 fit: BoxFit.cover,
               ),
             ),
@@ -30,7 +30,7 @@ class Login extends StatelessWidget {
               height: 20.0,
             ),
             Padding(
-              padding: const EdgeInsets.all(7.0),
+              padding: const EdgeInsets.symmetric(vertical: 7, horizontal: 16),
               child: TextFormField(
                 decoration: const InputDecoration(
                   hintText: "Username",
